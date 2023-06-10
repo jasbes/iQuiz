@@ -9,11 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var initButton: UIButton!
+    
+
+    @IBAction func ButtonClicked(_ sender: Any) {
+        print("Botao clicado")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        configureLayout()
     }
-
-
+    
+    func configureLayout() {
+        initButton.layer.cornerRadius = 12.0
+    }
+    
 }
 
